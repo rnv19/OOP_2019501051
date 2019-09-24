@@ -20,6 +20,12 @@ public class BinaryToDecimal {
      * @return the decimal number n of the binary string.
      */
     public static int binaryToDecimal(String s) {
-        
+        int res = 0;
+        for ( int i=0; i<s.length();i++){
+            if (s.charAt(i) == '1'){
+                res += Math.pow(2, s.length()-1-i);
+            }
+        }
+        return res;
     }
 }
