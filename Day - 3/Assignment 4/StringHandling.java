@@ -28,6 +28,7 @@ public final class StringHandling {
         for (i = 0; i < arr.length; i++) {
             res[i] = arr[i].toLowerCase();
         }
+        
         return res;
     }
 }
