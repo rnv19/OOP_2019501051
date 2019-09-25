@@ -19,7 +19,7 @@ public final class FrontTimes {
      /**.
     Constructer
     */
-    private StringTimes() {
+    private FrontTimes() {
         //unused
     }
     /** Not a javadoc (ignored). */

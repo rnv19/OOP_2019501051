@@ -13,7 +13,7 @@ public final class Squares {
     /**.
     Constructer
     */
-    private StringTimes() {
+    private Squares() {
         //unused
     }
     /**
