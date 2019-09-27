@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Contact",
+            "request": "launch",
+            "mainClass": "Contact",
+            "projectName": "OOP_2019501051_881f80f"
+        }
+    ]
+}
