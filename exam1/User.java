@@ -9,6 +9,7 @@ public class User {
         this.name = name;
         this.connections = connections;
         this.numConnections = numConnections;
+
     }
     
     public String getName(){
@@ -36,6 +37,6 @@ public class User {
     }
 
     public String toString(){
-        return (name + ":" + connections);
+        return (name + " : " + connections);
     }
 }
