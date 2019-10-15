@@ -1,11 +1,11 @@
 import java.util.*;
 
 public class User {
-    public String name;
-    public User[] connections;
-    public int numConnections;
+    private String name;
+    private User[] connections;
+    private int numConnections;
 
-    public User(final String name){
+    public User(final String name, final User[] connections, final int numConnections){
         this.name = name;
         this.connections = connections;
         this.numConnections = numConnections;
