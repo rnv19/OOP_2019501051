@@ -50,16 +50,12 @@ public class OrderedList extends AbstractList {
      * @return the position of the item.
      */
     public int rank(int item) {
-        int lo = 0, hi = size-1; 
-        while (lo <= hi) { 
-            int mid = lo + (hi - lo) / 2;
-            if      (item < list[hi]) hi = mid - 1; 
-            else if (item > list[lo]) lo = mid + 1; 
-            else return mid; 
-        } 
-        return lo;
-    } 
-
+        for (int i = 0; i < size; i++){
+            if (list[i] == item){
+                return i;
+            }
+        }return -1;
+    }
     /**
      * the main function.
      *

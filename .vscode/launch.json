@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestRunner",
+            "request": "launch",
+            "mainClass": "TestRunner",
+            "projectName": "OOP_2019501051_881f80f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Queen",
             "request": "launch",
             "mainClass": "Queen",
