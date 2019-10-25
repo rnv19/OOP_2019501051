@@ -1,10 +1,10 @@
 class Menu {
     public static void main(String[] args) {
-        Card C1 = new Card("harry", "Potter", "thriller");
+        Card C1 = new Card("Evil", "Dead", "thriller");
         C1.Get_Title();
         C1.Get_Author();
         C1.Get_Subject();
-        Card C2 = new Card("histopan", "aditya bravo", "action");
+        Card C2 = new Card("Mission", "Impossible", "action");
         C2.Get_Title();
         C2.Get_Author();
         C2.Get_Subject();
