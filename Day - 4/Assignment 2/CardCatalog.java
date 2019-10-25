@@ -1,93 +1,55 @@
-import java.lang.reflect.Array;
-import java.util.*;
+class CardCatalog {
+    Card[]cardArray;
+    int index = 0;
 
-final class CardCatalog{
-    int size = 0;
-
-    private CardCatalog() {
-        this.title = new Card[10];
-        this.author = new Card[10];
-        this.subject = new Card[10];
+    CardCatalog() {
+        cardArray = new Card[10];
     }
 
-    public void main(String[] args){
+    public void AddCard(Card obj) {
+        cardArray[index] = obj;
+        index += 1;
     }
-    
-    public void AddACard(Card card) {
-        if (size != title.length){
-            title[size] = card;
-            author[size] = card;
-            subject[size] = card;
-            size++;
-        } else{
-            title1 = Arrays.copyOf(title, size*2);
-            title = 
-            title[size] = card;
-            author[size] = card;
-            subject[size] = card;
-            size++;
-        }
-
-    }
-    
-    public Card getATitle(String searchName){
-        for (int i=0; i < size; i++){
-            if (title.getTitle(searchName).equals(searchName)){
-                return title.getTitle[i];
-        }
+    public Card Get_a_title(String s1) {
+        for(int i = 0; i<cardArray.length; i++) {
+            if(cardArray[i].TitleOfBook.equals(s1)) {
+                return cardArray[i];
+            }
         }
         return null;
     }
-
-    public Card getAnAuthor(String searchName){
-        for (int i=0; i < size; i++){
-            if (author.getAuthor(searchName).equals(searchName)){
-                return author.getAuthor[i];
-        }
-        }
-        return null;
-    }
-    public Card getSubject(String searchName){
-        for (int i=0; i < size; i++){
-            if (subject.getSubject(searchName).equals(searchName)){
-                return subject.getAuthor[i];
-        }
+    public Card[] Get_author(String s2) {
+        Card[] arr = new Card[index];
+        int count = 0;
+        for(int i = 0; i<cardArray.length; i++) {
+            if(cardArray[i].AuthorOfBook.equals(s2)) {
+                arr[count] = cardArray[i];
+                count += 1;
+            }
         }
         return null;
     }
-    public Card removeATitle(String searchName){
-        for (int i=0; i < size; i++){
-            if (title.getTitle(searchName).equals(searchName)){
-                for (int j=i; j< size -1; j++){
-                    title[j] = title[j+1];
-                }
-                title[size] = null;
-                return true;
-        }
+            
+    public Card get_Subject(String s3) {
+        for(int i = 0; i<cardArray.length; i++) {
+            if(cardArray[i].SubjectOfBook.equals(s3)) {
+                cardArray[i] = null;
+            }
         }
         return null;
-        for (int i=0; i < size; i++){
-            if (title.getAuthor(searchName).equals(searchName)){
-                for (int j=i; j< size -1; j++){
-                    title[j] = title[j+1];
-                }
-                title[size] = null;
-                return true;
+    }
+    public void remove_All(String s4) {
+        for(int i = 0; i<cardArray.length; i++) {
+            if(cardArray[i].TitleOfBook == s4) {
+                cardArray[i] = null;
+            }
+        } 
+    }
+    public void print_Catalog() {
+        for(int i = 0; i<cardArray.length; i++) {
+            if(this.cardArray[i] != null) {
+                System.out.println(cardArray[i]);
+            }
         }
-        }
-        return null;
-        for (int i=0; i < size; i++){
-            if (title.getSubject(searchName).equals(searchName)){
-                for (int j=i; j< size -1; j++){
-                    title[j] = title[j+1];
-                }
-                size--;
-                title[size] = null;
-                return true;
-        }
-        }
-        return null;
-    }        
-
+    }
 }
-    

@@ -9,40 +9,40 @@
  */ 
 
 //  Your code goes here... For Card class
-public class Card{
-    private String title;
-    private String author;
-    private String subject;
+class Card {
+    String TitleOfBook;
+    String AuthorOfBook;
+    String SubjectOfBook;
 
-    public Card(final String title, final String author, final String subject) {
-        this.title = title;
-        this.author = author;
-        this.subject = subject;
+    public Card() {
+    }    
+    public Card(String TitleOfBook, String AuthorOfBook, String SubjectOfBook) {
+        this.TitleOfBook = TitleOfBook;
+        this.AuthorOfBook = AuthorOfBook;
+        this.SubjectOfBook = SubjectOfBook;
     }
-    public String getTitle(String name){
-        return title;
-    }  
-    public String getAuthor(String name){
-        return author;
-    }
-
-    public String getSubject(String name){
-        return subject;
+    public void Set_Title(String TitleOfBook) {
+        this.TitleOfBook = TitleOfBook;
     }
 
-    // public void setName(final String newName){
-    //     this.name = newName;
-    // }
+    public void Set_Author(String AuthorOfBook) {
+        this.AuthorOfBook = AuthorOfBook;
+    }
 
-    // public void setEmail(final String newEmail){
-    //     this.email = newEmail;
-    // }
+    public void Set_Subject(String SubjectOfBook) {
+        this.SubjectOfBook = SubjectOfBook;
+    }
 
-    // public void setPhoneNumber(final String newPhoneNumber){
-    //     this.phoneNumber = newPhoneNumber;
-    // }
-
-    public String toString(){
-        return ("{ Title = " + title + ", Author = " + author + ", Subject = " + subject+ " }");
+    public String Get_Title() {
+        return this.TitleOfBook;
+    }
+    public String Get_Author() {
+        return this.AuthorOfBook;
+    }
+    public String Get_Subject() {
+        return this.SubjectOfBook;
+    }
+    public String toString() {
+        return "Book Title :" + this.TitleOfBook + " , " + "Author of Book :" + this.AuthorOfBook + " , " + "Subject of Book :" + this.SubjectOfBook;
     }
 }
