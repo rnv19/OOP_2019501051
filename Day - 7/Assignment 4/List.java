@@ -194,7 +194,7 @@ public class List {
         if (index < size){
             for (int i = index; i < list.length-1; i++){
                 list[i] = list[i+1];
-        }
+            }
         list[list.length-1] = 0;
         size--;
         }
